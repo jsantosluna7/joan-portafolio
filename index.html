@@ -24,29 +24,29 @@
       <div class="nav-menu" id="myNavMenu">
         <ul class="nav_menu_list">
           <li class="nav_list">
-            <a href="#home" class="nav-link">Home</a>
+            <a href="#home" class="nav-link" data-i18n="nav_home">Home</a>
             <div class="circle"></div>
           </li>
           <li class="nav_list">
-            <a href="#about" class="nav-link">About</a>
+            <a href="#about" class="nav-link" data-i18n="nav_about">About</a>
             <div class="circle"></div>
           </li>
           <li class="nav_list">
-            <a href="#skills" class="nav-link">Skills</a>
+            <a href="#skills" class="nav-link" data-i18n="nav_skills">Skills</a>
             <div class="circle"></div>
           </li>
           <li class="nav_list">
-            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#projects" class="nav-link" data-i18n="nav_projects">Projects</a>
             <div class="circle"></div>
           </li>
           <li class="nav_list">
-            <a href="#contact" class="nav-link">Contact</a>
+            <a href="#contact" class="nav-link" data-i18n="nav_contact">Contact</a>
             <div class="circle"></div>
           </li>
         </ul>
       </div>
       <div class="nav-button">
-        <a href="assets/Documents/Jesus Santos CV.pdf" download="Jesus Santos CV.pdf"><button class="btn">
+        <a href="assets/Documents/Jesus Santos CV.pdf" download="Jesus Santos CV.pdf"><button class="btn" data-i18n="download_btn">
             Download CV <i class="uil uil-file-alt"></i></button></a>
       </div>
       <div class="nav-menu-btn">
@@ -63,10 +63,10 @@
             <span>Joan Santos</span>
           </div>
           <div class="featured-name">
-            <p>I'm <span class="typedText"></span></p>
+            <p data-i18n="title_pres">I'm </p><span class="typedText"></span>
           </div>
           <div class="featured-text-info">
-            <p>
+            <p data-i18n="about_txt">
               Desarrollador FullStack con experiencia en tecnologías como
               HTML5, CSS, JavaScript, TypeScript, C#, Angular, Bootstrap y
               .NET Core, además de manejo de bases de datos SQL-Server y
@@ -76,10 +76,10 @@
             </p>
           </div>
           <div class="featured-text-btn">
-            <button class="btn blue-btn" onclick="location.href='./#contact'">
+            <button class="btn blue-btn" onclick="location.href='./#contact'" data-i18n="contact_txt">
               Contactame!
             </button>
-            <a href="assets/Documents/Jesus Santos CV.pdf" download="Jesus Santos CV.pdf">
+            <a href="assets/Documents/Jesus Santos CV.pdf" download="Jesus Santos CV.pdf" data-i18n="download_btn">
               <button class="btn blue-btn">
                 Descargar CV <i class="uil uil-file-alt"></i>
               </button>
@@ -102,7 +102,7 @@
         <div class="scroll-icon-box">
           <a href="#about" class="scroll-btn">
             <i class="uil uil-mouse-alt"></i>
-            <p>Scroll Down</p>
+            <p data-i18n="scroll_txt">Scroll Down</p>
           </a>
         </div>
       </section>
@@ -339,6 +339,9 @@
 
   <!-- SCROLLREVEAL -->
   <script src="https://unpkg.com/scrollreveal"></script>
+
+  <!-- i18next -->
+  <script src="https://unpkg.com/i18next/dist/umd/i18next.min.js"></script>
 
   <!-- MAIN JS -->
   <script src="main.js"></script>
