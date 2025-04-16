@@ -1,437 +1,347 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Joan Santos</title>
-    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon" />
-    <!-- ICONOS -->
-    <link
-      rel="stylesheet"
-      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
-    />
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="container">
-      <!-- NAVBAR -->
-      <nav id="header">
-        <div class="nav-logo">
-          <p class="nav-name">Joan</p>
-          <span>.</span>
-        </div>
-        <div class="nav-menu" id="myNavMenu">
-          <ul class="nav_menu_list">
-            <li class="nav_list">
-              <a href="#home" class="nav-link">Home</a>
-              <div class="circle"></div>
-            </li>
-            <li class="nav_list">
-              <a href="#about" class="nav-link">About</a>
-              <div class="circle"></div>
-            </li>
-            <li class="nav_list">
-              <a href="#skills" class="nav-link">Skills</a>
-              <div class="circle"></div>
-            </li>
-            <li class="nav_list">
-              <a href="#projects" class="nav-link">Projects</a>
-              <div class="circle"></div>
-            </li>
-            <li class="nav_list">
-              <a href="#contact" class="nav-link">Contact</a>
-              <div class="circle"></div>
-            </li>
-          </ul>
-        </div>
-        <div class="nav-button">
-          <button class="btn">
-            Download CV <i class="uil uil-file-alt"></i>
-          </button>
-        </div>
-        <div class="nav-menu-btn">
-          <i class="uil uil-bars" onclick="myMenuFunction()"></i>
-        </div>
-      </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Joan Santos</title>
+  <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon" />
+  <!-- ICONOS -->
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css" />
 
-      <!-- MAIN -->
-      <main class="wrapper">
-        <!-- FEATURED BOX -->
-        <section class="featured-box" id="home">
-          <div class="featured-text">
-            <div class="featured-text-card">
-              <span>Joan Santos</span>
-            </div>
-            <div class="featured-name">
-              <p>I'm <span class="typedText">Font-End</span></p>
-            </div>
-            <div class="featured-text-info">
-              <p>
-                Desarrollador FullStack con experiencia en tecnologías como
-                HTML5, CSS, JavaScript, TypeScript, C#, Angular, Bootstrap y
-                .NET Core, además de manejo de bases de datos SQL-Server y
-                Firebase. Apasionado por crear soluciones eficientes y con buen
-                diseño, busco oportunidades para aportar mis habilidades y
-                seguir creciendo profesionalmente.
-              </p>
-            </div>
-            <div class="featured-text-btn">
-              <button class="btn blue-btn">Contratame!</button>
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <!-- NAVBAR -->
+    <nav id="header">
+      <div class="nav-logo">
+        <p class="nav-name">Joan</p>
+        <span>.</span>
+      </div>
+      <div class="nav-menu" id="myNavMenu">
+        <ul class="nav_menu_list">
+          <li class="nav_list">
+            <a href="#home" class="nav-link">Home</a>
+            <div class="circle"></div>
+          </li>
+          <li class="nav_list">
+            <a href="#about" class="nav-link">About</a>
+            <div class="circle"></div>
+          </li>
+          <li class="nav_list">
+            <a href="#skills" class="nav-link">Skills</a>
+            <div class="circle"></div>
+          </li>
+          <li class="nav_list">
+            <a href="#projects" class="nav-link">Projects</a>
+            <div class="circle"></div>
+          </li>
+          <li class="nav_list">
+            <a href="#contact" class="nav-link">Contact</a>
+            <div class="circle"></div>
+          </li>
+        </ul>
+      </div>
+      <div class="nav-button">
+        <a href="assets/Documents/Jesus Santos CV.pdf" download="Jesus Santos CV.pdf"><button class="btn">
+            Download CV <i class="uil uil-file-alt"></i></button></a>
+      </div>
+      <div class="nav-menu-btn">
+        <i class="uil uil-bars" onclick="myMenuFunction()"></i>
+      </div>
+    </nav>
+
+    <!-- MAIN -->
+    <main class="wrapper">
+      <!-- FEATURED BOX -->
+      <section class="featured-box" id="home">
+        <div class="featured-text">
+          <div class="featured-text-card">
+            <span>Joan Santos</span>
+          </div>
+          <div class="featured-name">
+            <p>I'm <span class="typedText"></span></p>
+          </div>
+          <div class="featured-text-info">
+            <p>
+              Desarrollador FullStack con experiencia en tecnologías como
+              HTML5, CSS, JavaScript, TypeScript, C#, Angular, Bootstrap y
+              .NET Core, además de manejo de bases de datos SQL-Server y
+              Firebase. Apasionado por crear soluciones eficientes y con buen
+              diseño, busco oportunidades para aportar mis habilidades y
+              seguir creciendo profesionalmente.
+            </p>
+          </div>
+          <div class="featured-text-btn">
+            <button class="btn blue-btn" onclick="location.href='./#contact'">
+              Contactame!
+            </button>
+            <a href="assets/Documents/Jesus Santos CV.pdf" download="Jesus Santos CV.pdf">
               <button class="btn blue-btn">
                 Descargar CV <i class="uil uil-file-alt"></i>
               </button>
-            </div>
-            <div class="social_icons">
-              <div class="icon"><i class="uil uil-linkedin-alt"></i></div>
-              <div class="icon"><i class="uil uil-github-alt"></i></div>
-            </div>
-          </div>
-          <div class="featured-image">
-            <div class="image">
-              <img src="assets/photo.jpg" alt="avatar" />
-            </div>
-          </div>
-          <div class="scroll-icon-box">
-            <a href="#about" class="scroll-btn">
-              <i class="uil uil-mouse-alt"></i>
-              <p>Scroll Down</p>
             </a>
           </div>
-        </section>
-        <!-- ALL SECTIONS -->
-        <div class="all-sections">
-          <!-- ABOUT -->
-          <section id="about">
-            <p class="section_text_p1">Conoceme</p>
-            <h1 class="title">Sobre Mi</h1>
-
-            <div class="section-container">
-              <div class="section_pic-container">
-                <img
-                  src="assets/photo2.jpg"
-                  alt="profile picture"
-                  class="about-pic"
-                />
-              </div>
-              <div class="about-details-container">
-                <div class="about-containers">
-                  <div class="details-container">
-                    <img
-                      src="assets/graduation-cap.svg"
-                      alt="icon"
-                      class="icon_all"
-                    />
-                    <h3>Educación</h3>
-                    <p>
-                      Instituto Especializado de Estudios Superiores Loyola<br /><strong>Desarrollo
-                        de Software</strong>
-                    </p>
-                  </div>
-                  <div class="details-container">
-                    <img src="assets/award.svg" alt="icon" class="icon_all" />
-                    <h3>Certificaciones</h3>
-                    <p>JavaScript Intermedio</p>
-                    <p>Front-End Con Angular</p>
-                  </div>
-                </div>
-                <div class="text-container">
-                  <p>
-                    Soy desarrollador de software especializado en FrontEnd y
-                    BackEnd, con experiencia en tecnologías clave como HTML5,
-                    CSS, JavaScript, C#, TypeScript y frameworks como Angular,
-                    Bootstrap y .NET Core. Con un sólido manejo de bases de
-                    datos SQL-Server y Firebase, me apasiona crear soluciones
-                    tecnológicas que ofrezcan experiencias de usuario atractivas
-                    y eficientes. Estoy en busca de un entorno dinámico donde
-                    pueda aportar mis habilidades y seguir creciendo
-                    profesionalmente en el ámbito del desarrollo de software.
-                  </p>
-                </div>
-              </div>
+          <div class="social_icons">
+            <div class="icon" onclick="location.href='https://www.linkedin.com/in/joansantos06/'">
+              <i class="uil uil-linkedin-alt"></i>
             </div>
-            <img
-              src="assets/arrow-down.svg"
-              alt="arrow down"
-              class="icon_all arrow"
-              onclick="location.href='./#skills'"
-            />
-          </section>
-          <!-- SKILLS -->
-          <section id="skills">
-            <p class="section_text_p1">Explora Mis</p>
-            <h1 class="title">Habilidades</h1>
-            <div class="experience-details-container">
-              <div class="about-containers">
-                <div class="details-container">
-                  <h2 class="experience-sub-title">Frontend Development</h2>
-                  <div class="article-container">
-                    <article>
-                      <img
-                        src="assets/stack/html5.svg"
-                        alt="Skills Icon"
-                        class="icon_all"
-                      />
-                      <div>
-                        <h3>HTML 5</h3>
-                      </div>
-                    </article>
-                    <article>
-                      <img
-                        src="assets/stack/css.svg"
-                        alt="Skills Icon"
-                        class="icon_all"
-                      />
-                      <div>
-                        <h3>CSS</h3>
-                      </div>
-                    </article>
-                    <article>
-                      <img
-                        src="assets/stack/java-script.svg"
-                        alt="Skills Icon"
-                        class="icon_all"
-                      />
-                      <div>
-                        <h3>JavaScript</h3>
-                      </div>
-                    </article>
-                    <article>
-                      <img
-                        src="assets/stack/ts.svg"
-                        alt="Skills Icon"
-                        class="icon_all"
-                      />
-                      <div>
-                        <h3>TypeScript</h3>
-                      </div>
-                    </article>
-                    <article>
-                      <img
-                        src="assets/stack/angular-brands.svg"
-                        alt="Skills Icon"
-                        class="icon_all"
-                      />
-                      <div>
-                        <h3>Angular</h3>
-                      </div>
-                    </article>
-                    <article>
-                      <img
-                        src="assets/stack/react.svg"
-                        alt="Skills Icon"
-                        class="icon_all"
-                      />
-                      <div>
-                        <h3>React</h3>
-                      </div>
-                    </article>
-                  </div>
-                </div>
-                <div class="details-container">
-                  <h2 class="experience-sub-title">Backend Development</h2>
-                  <div class="article-container">
-                    <article>
-                      <img
-                        src="assets/stack/sql server.svg"
-                        alt="Skills Icon"
-                        class="icon_all"
-                      />
-                      <div>
-                        <h3>SQL-Server</h3>
-                      </div>
-                    </article>
-                    <article>
-                      <img
-                        src="assets/stack/csharp.svg"
-                        alt="Skills Icon"
-                        class="icon_all"
-                      />
-                      <div>
-                        <h3>C#</h3>
-                      </div>
-                    </article>
-                    <article>
-                      <img
-                        src="assets/stack/git.svg"
-                        alt="Skills Icon"
-                        class="icon_all"
-                      />
-                      <div>
-                        <h3>Git</h3>
-                      </div>
-                    </article>
-                    <article>
-                      <img
-                        src="assets/stack/github.svg"
-                        alt="Skills Icon"
-                        class="icon_all"
-                      />
-                      <div>
-                        <h3>GitHub</h3>
-                      </div>
-                    </article>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <img
-              src="assets/arrow-down.svg"
-              alt="arrow down"
-              class="icon_all arrow"
-              onclick="location.href='./#projects'"
-            />
-          </section>
-          <!-- PROJECTS -->
-          <section id="projects">
-            <p class="section_text_p1">Ve Mis Recientes</p>
-            <h1 class="title">Proyectos</h1>
-            <div class="experience-details-container">
-              <div class="about-containers">
-                <div class="details-container color-container">
-                  <div class="article-container">
-                    <img
-                      src="assets/miconsulta.png"
-                      alt="project 1"
-                      class="project-img"
-                    />
-                  </div>
-                  <h2 class="experience-sub-title project-title">
-                    Mi Consulta
-                  </h2>
-                  <div class="btn-container">
-                    <button
-                      class="btn btn-color-2 project-btn"
-                      onclick="location.href='https://github.com/joeliranzo/miconsulta'"
-                    >
-                      Github
-                    </button>
-                    <button
-                      class="btn btn-color-2 project-btn"
-                      onclick="location.href='https://miconsulta.deepthinking.dev/'"
-                    >
-                      Live Demo
-                    </button>
-                  </div>
-                </div>
-                <div class="details-container color-container">
-                  <div class="article-container">
-                    <img
-                      src="assets/pokedex.png"
-                      alt="project 1"
-                      class="project-img"
-                    />
-                  </div>
-                  <h2 class="experience-sub-title project-title">PokeDéx</h2>
-                  <div class="btn-container">
-                    <button
-                      class="btn btn-color-2 project-btn"
-                      onclick="location.href='https://github.com/jsantosluna7/poke-api'"
-                    >
-                      Github
-                    </button>
-                    <button
-                      class="btn btn-color-2 project-btn"
-                      onclick="location.href='https://dev-poke.netlify.app/'"
-                    >
-                      Live Demo
-                    </button>
-                  </div>
-                </div>
-                <div class="details-container color-container">
-                  <div class="article-container">
-                    <img
-                      src="assets/recepie book.png"
-                      alt="project 1"
-                      class="project-img"
-                    />
-                  </div>
-                  <h2 class="experience-sub-title project-title">
-                    Recipes Book
-                  </h2>
-                  <div class="btn-container">
-                    <button
-                      class="btn btn-color-2 project-btn"
-                      onclick="location.href='https://github.com/jsantosluna7/recipes-book'"
-                    >
-                      Github
-                    </button>
-                    <button
-                      class="btn btn-color-2 project-btn"
-                      onclick="location.href='https://dev-recepies.netlify.app/'"
-                    >
-                      Live Demo
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <img
-              src="assets/arrow-down.svg"
-              alt="arrow down"
-              class="icon_all arrow"
-              onclick="location.href='./#contact'"
-            />
-          </section>
-          <!-- CONTACT -->
-          <section id="contact">
-            <p class="section_text_p1">Hablemos</p>
-            <h1 class="title">Contactame</h1>
-            <div class="contact-info-upper-container">
-              <div class="contact-info-container">
-                <img
-                  src="assets/envelope-solid.svg"
-                  alt="envelope"
-                  class="icon_all contact-icon email-icon"
-                />
-                <p>
-                  <a href="mailto:jsantosluna06@gmail.com"
-                    >jsantosluna06@gmail.com</a
-                  >
-                </p>
-              </div>
-              <div class="contact-info-container">
-                <img
-                  src="assets/linkedin.svg"
-                  alt="linkedin"
-                  class="icon_all contact-icon"
-                />
-                <p>
-                  <a href="https://www.linkedin.com/in/joansantos06/"
-                    >LinkedIn</a
-                  >
-                </p>
-              </div>
-            </div>
-          </section>
-        </div>
-        <!-- FOOTER -->
-        <footer class="main-footer">
-          <div class="nav">
-            <div class="nav-links-container">
-              <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-              </ul>
+            <div class="icon" onclick="location.href='https://github.com/jsantosluna7'">
+              <i class="uil uil-github-alt"></i>
             </div>
           </div>
-          <p>Copyright &#169; 2025 Joan Santos. All Rights Reserved</p>
-        </footer>
-      </main>
-    </div>
+        </div>
+        <div class="featured-image">
+          <div class="image">
+            <img src="assets/photo.jpg" alt="avatar" />
+          </div>
+        </div>
+        <div class="scroll-icon-box">
+          <a href="#about" class="scroll-btn">
+            <i class="uil uil-mouse-alt"></i>
+            <p>Scroll Down</p>
+          </a>
+        </div>
+      </section>
+      <!-- ALL SECTIONS -->
+      <div class="all-sections">
+        <!-- ABOUT -->
+        <section id="about">
+          <p class="section_text_p1">Conoceme</p>
+          <h1 class="title">Sobre Mi</h1>
 
-    <!-- JS -->
+          <div class="section-container">
+            <div class="section_pic-container left-container">
+              <img src="assets/photo2.jpg" alt="profile picture" class="about-pic" />
+            </div>
+            <div class="about-details-container right-container">
+              <div class="about-containers">
+                <div class="details-container">
+                  <img src="assets/graduation-cap.svg" alt="icon" class="icon_all" />
+                  <h3>Educación</h3>
+                  <p>
+                    Instituto Especializado de Estudios Superiores Loyola<br /><strong>Desarrollo de Software</strong>
+                  </p>
+                </div>
+                <div class="details-container">
+                  <img src="assets/award.svg" alt="icon" class="icon_all" />
+                  <h3>Certificaciones</h3>
+                  <p>JavaScript Intermedio</p>
+                  <p>Front-End Con Angular</p>
+                </div>
+              </div>
+              <div class="text-container">
+                <p>
+                  Soy desarrollador de software especializado en FrontEnd y
+                  BackEnd, con experiencia en tecnologías clave como HTML5,
+                  CSS, JavaScript, C#, TypeScript y frameworks como Angular,
+                  Bootstrap y .NET Core. Con un sólido manejo de bases de
+                  datos SQL-Server y Firebase, me apasiona crear soluciones
+                  tecnológicas que ofrezcan experiencias de usuario atractivas
+                  y eficientes. Estoy en busca de un entorno dinámico donde
+                  pueda aportar mis habilidades y seguir creciendo
+                  profesionalmente en el ámbito del desarrollo de software.
+                </p>
+              </div>
+            </div>
+          </div>
+          <img src="assets/arrow-down.svg" alt="arrow down" class="icon_all arrow"
+            onclick="location.href='./#skills'" />
+        </section>
+        <!-- SKILLS -->
+        <section id="skills">
+          <p class="section_text_p1">Explora Mis</p>
+          <h1 class="title">Habilidades</h1>
+          <div class="experience-details-container">
+            <div class="about-containers">
+              <div class="details-container left-container">
+                <h2 class="experience-sub-title">Frontend Development</h2>
+                <div class="article-container">
+                  <article>
+                    <img src="assets/stack/html5.svg" alt="Skills Icon" class="icon_all" />
+                    <div>
+                      <h3>HTML 5</h3>
+                    </div>
+                  </article>
+                  <article>
+                    <img src="assets/stack/css.svg" alt="Skills Icon" class="icon_all" />
+                    <div>
+                      <h3>CSS</h3>
+                    </div>
+                  </article>
+                  <article>
+                    <img src="assets/stack/java-script.svg" alt="Skills Icon" class="icon_all" />
+                    <div>
+                      <h3>JavaScript</h3>
+                    </div>
+                  </article>
+                  <article>
+                    <img src="assets/stack/ts.svg" alt="Skills Icon" class="icon_all" />
+                    <div>
+                      <h3>TypeScript</h3>
+                    </div>
+                  </article>
+                  <article>
+                    <img src="assets/stack/angular-brands.svg" alt="Skills Icon" class="icon_all" />
+                    <div>
+                      <h3>Angular</h3>
+                    </div>
+                  </article>
+                  <article>
+                    <img src="assets/stack/react.svg" alt="Skills Icon" class="icon_all" />
+                    <div>
+                      <h3>React</h3>
+                    </div>
+                  </article>
+                </div>
+              </div>
+              <div class="details-container right-container">
+                <h2 class="experience-sub-title">Backend Development</h2>
+                <div class="article-container">
+                  <article>
+                    <img src="assets/stack/sql server.svg" alt="Skills Icon" class="icon_all" />
+                    <div>
+                      <h3>SQL-Server</h3>
+                    </div>
+                  </article>
+                  <article>
+                    <img src="assets/stack/csharp.svg" alt="Skills Icon" class="icon_all" />
+                    <div>
+                      <h3>C#</h3>
+                    </div>
+                  </article>
+                  <article>
+                    <img src="assets/stack/git.svg" alt="Skills Icon" class="icon_all" />
+                    <div>
+                      <h3>Git</h3>
+                    </div>
+                  </article>
+                  <article>
+                    <img src="assets/stack/github.svg" alt="Skills Icon" class="icon_all" />
+                    <div>
+                      <h3>GitHub</h3>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+          <img src="assets/arrow-down.svg" alt="arrow down" class="icon_all arrow"
+            onclick="location.href='./#projects'" />
+        </section>
+        <!-- PROJECTS -->
+        <section id="projects">
+          <p class="section_text_p1">Ve Mis Recientes</p>
+          <h1 class="title">Proyectos</h1>
+          <div class="experience-details-container">
+            <div class="about-containers">
+              <div class="details-container color-container">
+                <div class="article-container">
+                  <img src="assets/miconsulta.png" alt="project 1" class="project-img" />
+                </div>
+                <h2 class="experience-sub-title project-title">
+                  Mi Consulta
+                </h2>
+                <div class="btn-container">
+                  <button class="btn btn-color-2 project-btn"
+                    onclick="location.href='https://github.com/joeliranzo/miconsulta'">
+                    Github
+                  </button>
+                  <button class="btn btn-color-2 project-btn"
+                    onclick="location.href='https://miconsulta.deepthinking.dev/'">
+                    Live Demo
+                  </button>
+                </div>
+              </div>
+              <div class="details-container color-container">
+                <div class="article-container">
+                  <img src="assets/pokedex.png" alt="project 1" class="project-img" />
+                </div>
+                <h2 class="experience-sub-title project-title">PokeDéx</h2>
+                <div class="btn-container">
+                  <button class="btn btn-color-2 project-btn"
+                    onclick="location.href='https://github.com/jsantosluna7/poke-api'">
+                    Github
+                  </button>
+                  <button class="btn btn-color-2 project-btn" onclick="location.href='https://dev-poke.netlify.app/'">
+                    Live Demo
+                  </button>
+                </div>
+              </div>
+              <div class="details-container color-container">
+                <div class="article-container">
+                  <img src="assets/recepie book.png" alt="project 1" class="project-img" />
+                </div>
+                <h2 class="experience-sub-title project-title">
+                  Recipes Book
+                </h2>
+                <div class="btn-container">
+                  <button class="btn btn-color-2 project-btn"
+                    onclick="location.href='https://github.com/jsantosluna7/recipes-book'">
+                    Github
+                  </button>
+                  <button class="btn btn-color-2 project-btn"
+                    onclick="location.href='https://dev-recepies.netlify.app/'">
+                    Live Demo
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <img src="assets/arrow-down.svg" alt="arrow down" class="icon_all arrow"
+            onclick="location.href='./#contact'" />
+        </section>
+        <!-- CONTACT -->
+        <section id="contact">
+          <p class="section_text_p1">Hablemos</p>
+          <h1 class="title">Contactame</h1>
+          <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+              <img src="assets/envelope-solid.svg" alt="envelope" class="icon_all contact-icon email-icon" />
+              <p>
+                <a id="a-clip" onclick="textClip()">jsantosluna06@gmail.com</a>
+              </p>
+            </div>
+            <div class="contact-info-container contact-info-container-2">
+              <img src="assets/linkedin.svg" alt="linkedin" class="icon_all contact-icon" />
+              <p>
+                <a href="https://www.linkedin.com/in/joansantos06/">LinkedIn</a>
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+      <!-- FOOTER -->
+      <footer class="main-footer">
+        <div class="nav">
+          <div class="nav-links-container">
+            <ul class="nav-links">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+        <p>Copyright &#169; 2025 Joan Santos. All Rights Reserved</p>
+      </footer>
+    </main>
+  </div>
 
-    <!-- TYPED JS -->
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <!-- JS -->
 
-    <!-- SCROLLREVEAL -->
-    <script src="https://unpkg.com/scrollreveal"></script>
+  <!-- TYPED JS -->
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 
-    <!-- MAIN JS -->
-    <script src="main.js"></script>
-  </body>
+  <!-- SCROLLREVEAL -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+  <!-- MAIN JS -->
+  <script src="main.js"></script>
+</body>
+
 </html>
