@@ -45,13 +45,25 @@
           </li>
         </ul>
       </div>
-      <div class="nav-button">
+      <!-- <div class="nav-button">
         <a href="assets/Documents/Jesus Santos CV.pdf" download="Jesus Santos CV.pdf"><button class="btn" data-i18n="download_btn">
             Download CV <i class="uil uil-file-alt"></i></button></a>
-      </div>
+      </div> -->
       <div class="nav-menu-btn">
         <i class="uil uil-bars" onclick="myMenuFunction()"></i>
       </div>
+      <div class="lang-menu">
+        <div class="selected-lang">
+        </div>
+        <ul>
+            <li onclick="spanishBtn()" id="spanishBtn">
+                <a class="es" data-i18n="sp">Spanish</a>
+            </li>
+            <li onclick="englishBtn()" id="englishBtn">
+                <a class="us" data-i18n="en">English</a>
+            </li>
+        </ul>
+    </div>
     </nav>
 
     <!-- MAIN -->
@@ -79,8 +91,8 @@
             <button class="btn blue-btn" onclick="location.href='./#contact'" data-i18n="contact_txt">
               Contactame!
             </button>
-            <a href="assets/Documents/Jesus Santos CV.pdf" download="Jesus Santos CV.pdf" data-i18n="download_btn">
-              <button class="btn blue-btn">
+            <a href="assets/Documents/Jesus Santos CV.pdf" download="Jesus Santos CV.pdf">
+              <button class="btn blue-btn" data-i18n="download_btn">
                 Descargar CV <i class="uil uil-file-alt"></i>
               </button>
             </a>
@@ -110,8 +122,8 @@
       <div class="all-sections">
         <!-- ABOUT -->
         <section id="about">
-          <p class="section_text_p1">Conoceme</p>
-          <h1 class="title">Sobre Mi</h1>
+          <p class="section_text_p1" data-i18n="about_subt">Conoceme</p>
+          <h1 class="title" data-i18n="about_title"="">Sobre Mi</h1>
 
           <div class="section-container">
             <div class="section_pic-container left-container">
@@ -121,20 +133,20 @@
               <div class="about-containers">
                 <div class="details-container">
                   <img src="assets/graduation-cap.svg" alt="icon" class="icon_all" />
-                  <h3>Educación</h3>
+                  <h3 data-i18n="about_edu">Educación</h3>
                   <p>
-                    Instituto Especializado de Estudios Superiores Loyola<br /><strong>Desarrollo de Software</strong>
+                    Instituto Especializado de Estudios Superiores Loyola<br /><strong data-i18n="about_edu2">Desarrollo de Software</strong>
                   </p>
                 </div>
                 <div class="details-container">
                   <img src="assets/award.svg" alt="icon" class="icon_all" />
-                  <h3>Certificaciones</h3>
-                  <p>JavaScript Intermedio</p>
-                  <p>Front-End Con Angular</p>
+                  <h3 data-i18n="about_cer">Certificaciones</h3>
+                  <p data-i18n="about_cer2">JavaScript Intermedio</p>
+                  <p data-i18n="about_cer3">Front-End Con Angular</p>
                 </div>
               </div>
               <div class="text-container">
-                <p>
+                <p data-i18n="about_txt">
                   Soy desarrollador de software especializado en FrontEnd y
                   BackEnd, con experiencia en tecnologías clave como HTML5,
                   CSS, JavaScript, C#, TypeScript y frameworks como Angular,
@@ -153,12 +165,12 @@
         </section>
         <!-- SKILLS -->
         <section id="skills">
-          <p class="section_text_p1">Explora Mis</p>
-          <h1 class="title">Habilidades</h1>
+          <p class="section_text_p1" data-i18n="skills_subt">Explora Mis</p>
+          <h1 class="title" data-i18n="skills_title">Habilidades</h1>
           <div class="experience-details-container">
             <div class="about-containers">
               <div class="details-container left-container">
-                <h2 class="experience-sub-title">Frontend Development</h2>
+                <h2 class="experience-sub-title" data-i18n="skills_sub">Frontend Development</h2>
                 <div class="article-container">
                   <article>
                     <img src="assets/stack/html5.svg" alt="Skills Icon" class="icon_all" />
@@ -199,7 +211,7 @@
                 </div>
               </div>
               <div class="details-container right-container">
-                <h2 class="experience-sub-title">Backend Development</h2>
+                <h2 class="experience-sub-title" data-i18n="skills_sub2">Backend Development</h2>
                 <div class="article-container">
                   <article>
                     <img src="assets/stack/sql server.svg" alt="Skills Icon" class="icon_all" />
@@ -234,8 +246,8 @@
         </section>
         <!-- PROJECTS -->
         <section id="projects">
-          <p class="section_text_p1">Ve Mis Recientes</p>
-          <h1 class="title">Proyectos</h1>
+          <p class="section_text_p1" data-i18n="projects_subt">Ve Mis Recientes</p>
+          <h1 class="title" data-i18n="projects_title">Proyectos</h1>
           <div class="experience-details-container">
             <div class="about-containers">
               <div class="details-container color-container">
@@ -296,8 +308,8 @@
         </section>
         <!-- CONTACT -->
         <section id="contact">
-          <p class="section_text_p1">Hablemos</p>
-          <h1 class="title">Contactame</h1>
+          <p class="section_text_p1" data-i18n="contact_subt">Hablemos</p>
+          <h1 class="title" data-i18n="contact_title">Contactame</h1>
           <div class="contact-info-upper-container">
             <div class="contact-info-container">
               <img src="assets/envelope-solid.svg" alt="envelope" class="icon_all contact-icon email-icon" />
@@ -319,15 +331,15 @@
         <div class="nav">
           <div class="nav-links-container">
             <ul class="nav-links">
-              <li><a href="#home">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#skills">Skills</a></li>
-              <li><a href="#projects">Projects</a></li>
-              <li><a href="#contact">Contact</a></li>
+              <li><a href="#home" data-i18n="nav_home">Home</a></li>
+              <li><a href="#about" data-i18n="nav_about">About</a></li>
+              <li><a href="#skills" data-i18n="nav_skills">Skills</a></li>
+              <li><a href="#projects" data-i18n="nav_projects">Projects</a></li>
+              <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
             </ul>
           </div>
         </div>
-        <p>Copyright &#169; 2025 Joan Santos. All Rights Reserved</p>
+        <p data-i18n="footer_txt">Copyright &#169; 2025 Joan Santos. All Rights Reserved</p>
       </footer>
     </main>
   </div>
@@ -344,7 +356,10 @@
   <script src="https://unpkg.com/i18next/dist/umd/i18next.min.js"></script>
 
   <!-- MAIN JS -->
-  <script src="main.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/languaje.js"></script>
+
+
 </body>
 
 </html>
