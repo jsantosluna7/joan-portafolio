@@ -86,20 +86,25 @@ function updateContent() {
 //FLAGS
 const spBtn = document.getElementById('spanishBtn');
 const enBtn = document.getElementById('englishBtn');
-const seLang = document.querySelector('.selected-lang');
+const seLang1 = document.querySelector('.selected-lang-1');
+const seLang2 = document.querySelector('.selected-lang-2');
 
 
 // SET CURRENT FLAG
 let currentFlang = localStorage.getItem('class');
-seLang.classList.add(currentFlang);
+seLang1.classList.add(currentFlang);
+seLang2.classList.add(currentFlang);
 
 
 // LANGUAGE FUNCTION
 
 function languages(addClass, removeClass, language){
   //Cambiar el boton principal
-  seLang.classList.add(addClass);
-  seLang.classList.remove(removeClass);
+  seLang1.classList.add(addClass);
+  seLang1.classList.remove(removeClass);
+  
+  seLang2.classList.add(addClass);
+  seLang2.classList.remove(removeClass);
   localStorage.setItem('language', language);
   localStorage.setItem('class', addClass);
 
