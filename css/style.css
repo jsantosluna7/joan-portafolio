@@ -307,3 +307,7 @@ nav {
     background: var(--first-color);
     border-radius: 50%;
 }
+
+.lang-2{
+    display: none;
+}

@@ -61,7 +61,8 @@
     list-style: none;
     text-align: left;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    cursor: pointer;
 }
 
 .lang-menu ul li a {

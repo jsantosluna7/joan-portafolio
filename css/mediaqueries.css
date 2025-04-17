@@ -44,6 +44,8 @@
     }
     .nav_menu_list{
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
     .nav-menu-btn{
         display: flex;
@@ -128,6 +130,37 @@
 
     .about-containers {
         margin-top: 0;
+    }
+
+    .lang-1{
+        display: none;
+    }
+
+    .lang-2{
+        display: block;
+    }
+
+    .lang-menu ul{
+        right: -120px;
+        top: -70px;
+    }
+
+    .lang-menu ul li{
+        margin: 0;
+        padding: 0;
+    }
+
+    .lang-menu ul li a{
+        font-size: .7rem;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .lang-menu ul li a:before {
+        width: 20px;
+        height: 20px;
     }
 }
 
