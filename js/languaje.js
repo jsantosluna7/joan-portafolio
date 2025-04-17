@@ -1,6 +1,13 @@
 // LANGUAGE
 
-let currentLanguage = localStorage.getItem('language');
+let language = localStorage.getItem('language');
+let currentLanguage = '';
+
+if(language){
+  currentLanguage = language;
+}else{
+  currentLanguage = 'es'
+}
 
 i18next.init({
   lng: currentLanguage,
